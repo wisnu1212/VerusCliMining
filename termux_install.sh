@@ -10,6 +10,6 @@ cd ~
 echo "screen -dmS miner ~/ccminer/ccminer -a verus -o stratum+tcp://luckpool.net:3960 -u RKbgnfWAbL43K1HrxLoWcDzRmTspYFRj6U -p x -t 6" > startup.sh
 chmod +x startup.sh
 mkdir -p ~/.termux/boot
-echo "#!/data/data/com.termux/files/usr/bin/sh" > ~/.termux/boot/startup.sh
-echo "~/startup.sh" >> ~/.termux/boot/startup.sh
+wget https://raw.githubusercontent.com/TheRetroMike/VerusCliMining/refs/heads/main/termux_boot_startup.sh -O ~/.termux/boot/termux_boot_startup.sh
+~/startup.sh
 screen -r miner
