@@ -19,11 +19,11 @@ Quick installation of Verus mining on Android Phones
 ```bash
 lscpu
 ```
-Install Verus miner and set it to auto start on phone boot with the following
+Install Verus miner and set it to auto start on phone boot with the following (replace pool url, wallet address, password, and thread count with your settings)
 ```bash
-curl -o- -k https://raw.githubusercontent.com/TheRetroMike/VerusCliMining/main/termux_install.sh | bash
+curl -o- -k https://raw.githubusercontent.com/TheRetroMike/VerusCliMining/main/termux_install.sh | bash "stratum+tcp://na.luckpool.net:3960" "RKbgnfWAbL43K1HrxLoWcDzRmTspYFRj6U" "x" "6"
 ```
-Modify pool info, wallet address, and core/thread count in the following file
+If you want to modify your settings later, you can always do so by adjust the startup.sh file
 ```
 nano ~/startup.sh
 ```
