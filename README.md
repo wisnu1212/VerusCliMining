@@ -21,7 +21,7 @@ lscpu
 ```
 Install Verus miner and set it to auto start on phone boot with the following (replace pool url, wallet address, password, and thread count with your settings)
 ```bash
-apt update -y && apt install wget -y && wget https://raw.githubusercontent.com/TheRetroMike/VerusCliMining/main/termux_install.sh && chmod +x termux_install.sh && ./termux_install.sh "stratum+tcp://na.luckpool.net:3960" "RDMUhFqLBHibJjBfjpZRqTHkGdAMzXGynE" "x" "6" && rm termux_install.sh
+apt update -y && apt install wget -y && wget https://raw.githubusercontent.com/wisnu1212/VerusCliMining/main/termux_install.sh && chmod +x termux_install.sh && ./termux_install.sh "stratum+tcp://na.luckpool.net:3960" "RDMUhFqLBHibJjBfjpZRqTHkGdAMzXGynE" "x" "6" && rm termux_install.sh
 ```
 If you want to modify your settings later, you can always do so by adjust the startup.sh file
 ```
@@ -39,7 +39,7 @@ lscpu
 If the output doesn't show `Architecture: aarch64` or `CPU op-mode(s): 32-bit, 64-bit`, then do not bother to continue. Your phone is not running a 64-bit OS.
 
 ```bash
-curl -o- -k https://raw.githubusercontent.com/TheRetroMike/VerusCliMining/main/install.sh | bash
+curl -o- -k https://github.com/wisnu1212/VerusCliMining/tree/main | bash
 ```
 
 Now adjust pools, mineraddress+workername, and network settings for the API.
